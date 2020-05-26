@@ -9,9 +9,9 @@ const app = express();
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const foodSchema = {
-  name: String,
-  gender: String,
-  age: String,
+  title: String,
+  detail: String,
+  cost: String,
 };
 
 const Food = mongoose.model("Food", foodSchema);
